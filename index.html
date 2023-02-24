@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=" width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+   
+    
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+        
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css"/>
+    <link rel="stylesheet" href="css/index.css">
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+       <div class="container">
+            <h1><a href="index.html"><img src="images/logo.png" alt="로고"></a></h1>
+            <ul class="nav">
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#page2">Design</a></li>
+                <li><a href="#page3">Renewal</a></li>
+            </ul>
+            <button><i id="icon"></i></button>    
+       </div>
+    </header>
+    <main id="full-page">
+        <article id="page1" class="section" data-href="page1">
+           <div class="container">
+                <div class="page1_txt">
+                    <h2>Kim ye ji</h2>
+                    <p><span class="next">Started as a Web Designer,</span>The way to become a Publisher.</p>
+                </div>
+           </div>
+        </article>
+        <article id="page2" class="section" data-href="page2">
+           <div class="container">
+               <section class="page2_txt clearfix">
+                    <h2>What I did <span class="next">as a Designer</span></h2>
+                    <p><span class="next">각종 이벤트 페이지와 상세페이지,</span>영역을 확장해서 패키지와 매뉴얼 디자인까지</p>
+               </section>
+               <section class="pc_ver clearfix">
+                   <div class="cont cont1" onclick="window.open('web_portfolio.pdf#page=36');">
+                       <h3>01 <span class="next">Event & Banner</span></h3>
+                       <div><img src="images/cont1.jpg" alt="배너이미지"></div>
+                   </div>
+                   <div class="cont cont2" onclick="window.open('web_portfolio.pdf#page=3');">
+                       <h3>02 <span class="next">Detail Page</span></h3>
+                       <div><img src="images/cont2.jpg" alt="상세이미지"></div>
+                   </div>
+                   <div class="cont cont3" onclick="window.open('web_portfolio.pdf#page=26');">
+                       <h3>03 <span class="next">Pakage Design</span></h3>
+                       <div><img src="images/cont3.jpg" alt="패키지이미지"></div>
+                   </div>
+               </section>
+               <section class="mo_ver">
+                  <a href="web_portfolio.html">
+                   <img src="images/cont_mo.jpg" alt="포트폴리오">
+                  </a>
+               </section>
+           </div>
+            <section></section>
+        </article>
+        <article id="page3" class="section" data-href="page3">
+            <div class="container">
+                <div class="cont_wrap">
+                    <section class="page3_txt">
+                        <h2>Renewal Site</h2>
+                        <p>사이트 리뉴얼 포트폴리오</p>
+                    </section>
+                    <section class="portfolio clearfix">
+                        <div class="site1" onclick="location.href='http://yj15225.dothome.co.kr/';"><p>커피빈</p></div>
+                        <div class="site2" onclick="location.href='war_memorial.html';"><p>전쟁기념관</p></div>
+                    </section>
+                </div>
+            </div>
+        </article>
+        <div id="footer" class="section clearfix">
+           <div class="container">
+                <h1><a href="index.html"><img src="images/logo.png" alt="로고"></a></h1>
+                <p>Contact Me</p>
+                <ul>
+                    <li>woqkthd@naver.com</li>
+                    <li>010.2939.9789</li>
+                </ul>
+           </div>
+        </div>
+    </main>
+    
+<script>
+    /*new fullpage('#full-page');*/
+     var myFullpage = new fullpage('#full-page', {
+        anchors: ['firstPage', 'secondPage', '3rdPage','footer']
+    });
+</script>
+</body>
+
+</html>
